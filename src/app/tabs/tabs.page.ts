@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Haptics, ImpactStyle } from '@capacitor/haptics';
 
 @Component({
   selector: 'app-tabs',
@@ -8,26 +7,6 @@ import { Haptics, ImpactStyle } from '@capacitor/haptics';
 })
 export class TabsPage {
 
-  constructor() { }
-  
-  async triggerHaptics() {
-    await Haptics.impact({ style: ImpactStyle.Light });
+  constructor() {}
 
-    await Haptics.impact({ style: ImpactStyle.Medium });
-
-    await Haptics.impact({ style: ImpactStyle.Heavy });
-
-  }
-
-  async triggerVibration() {
-    await Haptics.vibrate();
-  }
-
-  async triggerSelection() {
-    await Haptics.selectionStart();
-    
-    await Haptics.selectionChanged();
-
-    await Haptics.selectionEnd();
-  }
 }

@@ -1,60 +1,15 @@
 <ion-app>
-  <ion-header class="ion-no-border">
+  <ion-header>
     <ion-toolbar>
-      <!-- <ion-title>Habbib Dev.</ion-title> -->
-      <ion-buttons slot="start">
-        <ion-button>
-          <ion-icon name="apps"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-
+      <ion-title>Ionic App</ion-title>
       <ion-buttons slot="end">
-        <ion-button class="bordered" fill="solid" color="light">
-          <ion-icon color="custom" name="notifications"></ion-icon>
+        <ion-button (click)="toggleTheme()">
+          <ion-icon slot="icon-only" name="moon"></ion-icon>
         </ion-button>
       </ion-buttons>
-
     </ion-toolbar>
-
-    <ion-item lines="none">
-      <ion-avatar slot="start">
-        <img
-          src="https://th.bing.com/th?id=OIP.oQVSk2P3NFgMwqL0GC-tuQHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-          alt="">
-      </ion-avatar>
-      <ion-label>
-        <p>Welcome,</p>
-        <h3>Rash Mi Ka</h3>
-      </ion-label>
-    </ion-item>
   </ion-header>
-
   <ion-content>
-    <div class="slides ion-margin-buttom">
-      <ion-slides [options]="slidesOptions" pager="true">
-        <ion-slide>
-          <ion-card>
-            <ion-card-header></ion-card-header>
-            <ion-card-content>
-              <ion-card-title></ion-card-title>
-              <ion-card-subtitle></ion-card-subtitle>
-            </ion-card-content>
-          </ion-card>
-        </ion-slide>
-        <ion-slide>
-          <h1>Welcome to Slide 1</h1>
-          <img src="assets/images/slide1.png" alt="Slide 1 Image">
-        </ion-slide>
-        <ion-slide>
-          <h1>Welcome to Slide 2</h1>
-          <img src="assets/images/slide2.png" alt="Slide 2 Image">
-        </ion-slide>
-        <ion-slide>
-          <h1>Welcome to Slide 3</h1>
-          <img src="assets/images/slide3.png" alt="Slide 3 Image">
-        </ion-slide>
-      </ion-slides>
-    </div>
+    <ion-router-outlet></ion-router-outlet>
   </ion-content>
-  <ion-router-outlet></ion-router-outlet>
 </ion-app>

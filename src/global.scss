@@ -10,28 +10,80 @@
  */
 
 /* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+@import '@ionic/angular/css/core.css';
 
 /* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import "@ionic/angular/css/display.css";
+@import '@ionic/angular/css/normalize.css';
+@import '@ionic/angular/css/structure.css';
+@import '@ionic/angular/css/typography.css';
 
 /* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+@import '@ionic/angular/css/padding.css';
+@import '@ionic/angular/css/float-elements.css';
+@import '@ionic/angular/css/text-alignment.css';
+@import '@ionic/angular/css/text-transformation.css';
+@import '@ionic/angular/css/flex-utils.css';
+@import '@ionic/angular/css/display.css';
 
 /**
- * Ionic Dark Mode
+ * Ionic Dark Palette
  * -----------------------------------------------------
- * For more info, please see:
+ * For more information, please see:
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-// @import "@ionic/angular/css/palettes/dark.system.css";
+/* @import '@ionic/angular/css/palettes/dark.always.css'; */
+@import '@ionic/angular/css/palettes/dark.class.css';
+/* @import '@ionic/angular/css/palettes/dark.system.css'; */
+
+
+ion-content {
+    --background: var(--ion-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 16px;
+}
+
+.login-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.login-form {
+    width: 100%;
+    background: var(--ion-container-background);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--ion-box-shadow);
+    max-width: 400px;
+    margin: auto;
+}
+
+ion-item {
+    --min-height: 70px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    --transition: none;
+}
+
+ion-label {
+    font-size: 1.2rem;
+    color: var(--ion-text-color);
+}
+
+ion-input {
+    font-size: 1.2rem;
+}
+
+ion-button {
+    --background: var(--ion-color-primary);
+    --padding-start: 15px;
+    --padding-end: 15px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    font-size: 1.2rem;
+    width: 100%;
+}

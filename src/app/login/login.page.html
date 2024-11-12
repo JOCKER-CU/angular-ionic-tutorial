@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+
+
+  <div class="login-container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="login-form">
+      <ion-item shape="round">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" name="email" formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item shape="round">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" name="password" formControlName="password" required></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="primary" size="large" type="submit" shape="round">Login</ion-button>
+    </form>
+  </div>
+</ion-content>
